@@ -3,7 +3,7 @@ import React, { useRef, useLayoutEffect } from "react";
 import Section from "./Section";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowUpRight, Github, ExternalLink, Code2 } from "lucide-react";
+import { ArrowUpRight, Github, Code2 } from "lucide-react";
 import { motion } from "framer-motion";
 import StarField from "./StarField";
 import Image from "next/image";

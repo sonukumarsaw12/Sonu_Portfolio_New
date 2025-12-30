@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useMemo } from "react";
+import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { Float, Html, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { motion } from "framer-motion";

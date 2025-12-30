@@ -3,7 +3,7 @@ import React from "react";
 import Section from "./Section";
 import { motion } from "framer-motion";
 import StarField from "./StarField";
-import { Code2, Globe, Cpu, Zap } from "lucide-react";
+import { Code2, Globe } from "lucide-react";
 
 export default function About() {
     return (
@@ -92,7 +92,7 @@ export default function About() {
                                 <div className="text-purple-400">const <span className="text-blue-400">Sonu</span> = <span className="text-yellow-400">{"{"}</span></div>
                                 <div className="pl-6 text-gray-300">education: <span className="text-green-400">&quot;Chandigarh University&quot;</span>,</div>
                                 <div className="pl-6 text-gray-300">experience: <span className="text-green-400">&quot;HighRadius Intern&quot;</span>,</div>
-                                <div className="pl-6 text-gray-300">skills: <span className="text-yellow-400">["C++", "DSA", "Full Stack Web Development"]</span>,</div>
+                                <div className="pl-6 text-gray-300">skills: <span className="text-yellow-400">[&quot;C++&quot;, &quot;DSA&quot;, &quot;Full Stack Web Development&quot;]</span>,</div>
                                 <div className="pl-6 text-gray-300">status: <span className="text-green-400">&quot;Open to Work&quot;</span>,</div>
                                 <div className="pl-6 text-gray-300">loves: <span className="text-cyan-400">()</span> <span className="text-purple-400">=&gt;</span> <span className="text-yellow-400">&quot;Innovation&quot;</span></div>
                                 <div className="text-yellow-400">{"}"}</div>

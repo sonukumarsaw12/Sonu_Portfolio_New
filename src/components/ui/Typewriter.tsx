@@ -25,8 +25,6 @@ export default function Typewriter({
     const [typingDelay, setTypingDelay] = useState(typingSpeed);
 
     useEffect(() => {
-        let timer: NodeJS.Timeout;
-
         const handleTyping = () => {
             const i = loopNum % words.length;
             const fullText = words[i];
@@ -51,10 +49,10 @@ export default function Typewriter({
             }
         };
 
-        timer = setTimeout(handleTyping, typingDelay);
+        const timer = setTimeout(handleTyping, typingDelay);
 
         return () => clearTimeout(timer);
-    }, [displayedText, isDeleting, loopNum, words, typingSpeed, deletingSpeed, pauseTime]);
+    }, [displayedText, isDeleting, loopNum, words, typingSpeed, deletingSpeed, pauseTime, typingDelay]);
 
     return (
         <div className={`inline-flex items-center ${className}`}>

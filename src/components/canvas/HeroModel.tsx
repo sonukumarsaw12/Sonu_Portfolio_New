@@ -2,18 +2,14 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Float, useTexture, Stars, Sparkles } from "@react-three/drei";
-import { Group, Vector3 } from "three";
+import { Group } from "three";
 
 export default function HeroModel() {
     const group = useRef<Group>(null);
     const bgGroup = useRef<Group>(null);
     const texture = useTexture("/robot.png");
 
-    useFrame((state) => {
-        const t = state.clock.getElapsedTime();
-        const mouseX = (state.mouse.x * Math.PI) / 10;
-        const mouseY = (state.mouse.y * Math.PI) / 10;
-
+    useFrame((_state) => {
         if (group.current) {
             // Robot Mouse Interaction - STOPPED
         }
